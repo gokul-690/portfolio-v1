@@ -24,7 +24,7 @@ export default function Contact() {
     {
       icon: <FaMapMarkerAlt className="w-6 h-6" />,
       title: 'Location',
-      details: 'Erode, Tamil Nadu, India',
+      details: 'Available for Remote Work',
       link: null,
     },
   ];

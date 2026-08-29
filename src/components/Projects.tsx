@@ -179,8 +179,11 @@ export default function Projects() {
   });
 
   const photoY = useTransform(scrollYProgress, [0, 1], ['0%', '100%']);
-  const photoOpacity = useTransform(scrollYProgress, [0, 0.9, 1], [1, 1, 0]);
-  const photoScale = useTransform(scrollYProgress, [0, 0.95, 1], [1, 0.5, 0]);
+  
+  // Merge at the top (0 to 0.05) and Burst at the bottom (0.95 to 1.0)
+  const photoOpacity = useTransform(scrollYProgress, [0, 0.05, 0.95, 1], [0, 1, 1, 0]);
+  const photoScale = useTransform(scrollYProgress, [0, 0.05, 0.95, 1], [2.5, 1, 1, 2.5]);
+  const photoFilter = useTransform(scrollYProgress, [0, 0.05, 0.95, 1], ['blur(8px)', 'blur(0px)', 'blur(0px)', 'blur(8px)']);
 
   return (
     <section
@@ -230,7 +233,8 @@ export default function Projects() {
               style={{ 
                 top: photoY, 
                 opacity: photoOpacity,
-                scale: photoScale
+                scale: photoScale,
+                filter: photoFilter
               }}
             >
               <img src={profilePhoto} alt="Traveling avatar" className="w-full h-full object-cover" />

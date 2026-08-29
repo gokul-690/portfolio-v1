@@ -133,7 +133,7 @@ export default function Hero() {
               </span>
               <span className="text-slate-600 select-none text-xl">·</span>
               <span className="text-xl sm:text-2xl font-semibold text-slate-300 tracking-tight">
-                Software Engineer
+                
               </span>
             </div>
           </motion.div>
