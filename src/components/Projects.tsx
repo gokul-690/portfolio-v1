@@ -4,7 +4,7 @@ import profilePhoto from '../assets/1.jpeg';
 import project2 from '../assets/pj1.png';
 import project3 from '../assets/pj2.jpg';
 import project4 from '../assets/pj3.png';
-import portfolioV1 from '../assets/11.png';
+import portfolioV1 from '../assets/portimg.png';
 // Using the same TimelineDot as Experience for consistency
 function TimelineDot({ isActive }: { isActive?: boolean }) {
   const gradient = 'from-cyan-500 to-sky-500';
