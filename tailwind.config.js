@@ -9,7 +9,7 @@ export default {
         neonPurple: '#562286ff',
       },
       fontFamily: {
-        sans: ['Outfit', 'sans-serif'],
+        sans: ['Berghan', 'sans-serif'],
       },
       animation: {
         float: 'float 6s ease-in-out infinite',

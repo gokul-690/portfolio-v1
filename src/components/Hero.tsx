@@ -7,8 +7,8 @@ import {
   FaFileAlt,
   FaArrowDown,
 } from 'react-icons/fa';
-import profilePng from '../assets/1.jpeg';
-import profilePng2 from '../assets/11.png';
+import profilePng from '../assets/11.png';
+import profilePng2 from '../assets/1.jpeg';
 import profilePng3 from '../assets/3.jpeg';
 
 // ─── Animation Variants ──────────────────────────────────────────────────────
@@ -129,12 +129,10 @@ export default function Hero() {
             {/* Role line */}
             <div className="flex flex-wrap items-center gap-x-3 gap-y-2 pt-1">
               <span className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-cyan-400 to-sky-400 bg-clip-text text-transparent tracking-tight">
-                Full Stack Developer
+                Junior Python Developer
               </span>
               <span className="text-slate-600 select-none text-xl">·</span>
-              <span className="text-xl sm:text-2xl font-semibold text-slate-300 tracking-tight">
-                
-              </span>
+              <span className="text-xl sm:text-2xl font-semibold text-slate-300 tracking-tight"></span>
             </div>
           </motion.div>
 
@@ -155,7 +153,10 @@ export default function Hero() {
               className="text-slate-300/90 text-lg sm:text-xl leading-relaxed font-medium"
               variants={fadeUpVariants}
             >
-              Full Stack Developer with experience in building scalable web applications across frontend, backend, APIs, and databases using React.js, Node.js, FastAPI, and PostgreSQL. Focused on creating functional, responsive, and secure applications.
+              Full Stack Developer with experience in building scalable web
+              applications across frontend, backend, APIs, and databases using
+              React.js, Node.js, FastAPI, and PostgreSQL. Focused on creating
+              functional, responsive, and secure applications.
             </motion.p>
 
             {/* Hero Quote */}
@@ -164,8 +165,8 @@ export default function Hero() {
               className="pl-4 border-l-2 border-cyan-500/30"
             >
               <p className="text-base sm:text-lg text-slate-400/90 italic font-medium leading-relaxed tracking-wide">
-                "Even if fate fails you; <br className="hidden sm:block" />{' '}
-                hard work will give its own rewards."
+                "Even if fate fails you; <br className="hidden sm:block" /> hard
+                work will give its own rewards."
               </p>
               <p className="mt-2 text-xs font-semibold text-cyan-400/80 tracking-widest uppercase">
                 —kural 619

@@ -11,11 +11,6 @@ import {
 } from 'react-icons/fa';
 import {
   SiPython,
-  SiPandas,
-  SiScikitlearn,
-  SiTensorflow,
-  SiPytorch,
-  SiOpencv,
   SiReact,
   SiNodedotjs,
   SiFastapi,
@@ -25,8 +20,6 @@ import {
   SiMysql,
   SiDart,
 } from 'react-icons/si';
-import { GiArtificialIntelligence } from 'react-icons/gi';
-import { MdHealthAndSafety } from 'react-icons/md';
 
 // ─── Types ──────────────────────────────────────────────────────────────────
 
@@ -55,7 +48,7 @@ interface ExperienceItem {
 const experiences: ExperienceItem[] = [
   {
     company: 'Kanavu Startup Village',
-    role: 'Full Stack Developer',
+    role: 'Junior Python Developer',
     duration: 'May 2026 – Present',
     type: 'Professional',
     icon: <FaRobot />,
@@ -76,27 +69,33 @@ const experiences: ExperienceItem[] = [
     badges: [
       {
         label: 'Flutter',
-        gradient: 'from-sky-500/30 to-blue-500/30 border-sky-400/40 text-sky-300',
+        gradient:
+          'from-sky-500/30 to-blue-500/30 border-sky-400/40 text-sky-300',
       },
       {
         label: 'React',
-        gradient: 'from-cyan-500/30 to-sky-500/30 border-cyan-400/40 text-cyan-300',
+        gradient:
+          'from-cyan-500/30 to-sky-500/30 border-cyan-400/40 text-cyan-300',
       },
       {
         label: 'Node.js',
-        gradient: 'from-green-500/30 to-emerald-500/30 border-green-400/40 text-green-300',
+        gradient:
+          'from-green-500/30 to-emerald-500/30 border-green-400/40 text-green-300',
       },
       {
         label: 'FastAPI',
-        gradient: 'from-teal-500/30 to-emerald-500/30 border-teal-400/40 text-teal-300',
+        gradient:
+          'from-teal-500/30 to-emerald-500/30 border-teal-400/40 text-teal-300',
       },
       {
         label: 'Python',
-        gradient: 'from-yellow-500/30 to-amber-500/30 border-yellow-400/40 text-yellow-300',
+        gradient:
+          'from-yellow-500/30 to-amber-500/30 border-yellow-400/40 text-yellow-300',
       },
       {
         label: 'PostgreSQL',
-        gradient: 'from-blue-500/30 to-indigo-500/30 border-blue-400/40 text-blue-300',
+        gradient:
+          'from-blue-500/30 to-indigo-500/30 border-blue-400/40 text-blue-300',
       },
     ],
   },
@@ -122,23 +121,28 @@ const experiences: ExperienceItem[] = [
     badges: [
       {
         label: 'Power BI',
-        gradient: 'from-yellow-500/30 to-amber-500/30 border-yellow-400/40 text-yellow-300',
+        gradient:
+          'from-yellow-500/30 to-amber-500/30 border-yellow-400/40 text-yellow-300',
       },
       {
         label: 'Tableau',
-        gradient: 'from-blue-500/30 to-indigo-500/30 border-blue-400/40 text-blue-300',
+        gradient:
+          'from-blue-500/30 to-indigo-500/30 border-blue-400/40 text-blue-300',
       },
       {
         label: 'Python',
-        gradient: 'from-yellow-500/30 to-amber-500/30 border-yellow-400/40 text-yellow-300',
+        gradient:
+          'from-yellow-500/30 to-amber-500/30 border-yellow-400/40 text-yellow-300',
       },
       {
         label: 'MySQL',
-        gradient: 'from-orange-500/30 to-red-500/30 border-orange-400/40 text-orange-300',
+        gradient:
+          'from-orange-500/30 to-red-500/30 border-orange-400/40 text-orange-300',
       },
       {
         label: 'SQL',
-        gradient: 'from-cyan-500/30 to-sky-500/30 border-cyan-400/40 text-cyan-300',
+        gradient:
+          'from-cyan-500/30 to-sky-500/30 border-cyan-400/40 text-cyan-300',
       },
     ],
   },
@@ -206,7 +210,9 @@ function ExperienceCard({ exp, index }: ExperienceCardProps) {
         On desktop, the card is wrapped in a container that takes exactly half width.
         If it's even, it goes on the left. If it's odd, it goes on the right.
       */}
-      <div className={`order-2 md:order-none w-full md:w-1/2 ${isEven ? 'md:pr-12 lg:pr-16' : 'md:pl-12 lg:pl-16 md:ml-auto'} pl-12 sm:pl-16 md:pl-0`}>
+      <div
+        className={`order-2 md:order-none w-full md:w-1/2 ${isEven ? 'md:pr-12 lg:pr-16' : 'md:pl-12 lg:pl-16 md:ml-auto'} pl-12 sm:pl-16 md:pl-0`}
+      >
         <motion.div
           ref={ref}
           className="relative rounded-2xl overflow-hidden glass-effect-strong border border-white/10 hover:border-white/25 transition-all duration-500"
@@ -278,7 +284,9 @@ function ExperienceCard({ exp, index }: ExperienceCardProps) {
 
             {/* Responsibilities */}
             <div className="mb-6">
-              <h4 className={`text-xs font-semibold uppercase tracking-widest bg-gradient-to-r ${exp.accentFrom} ${exp.accentTo} bg-clip-text text-transparent mb-3`}>
+              <h4
+                className={`text-xs font-semibold uppercase tracking-widest bg-gradient-to-r ${exp.accentFrom} ${exp.accentTo} bg-clip-text text-transparent mb-3`}
+              >
                 Key Responsibilities
               </h4>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-1.5 gap-x-4">
@@ -290,7 +298,9 @@ function ExperienceCard({ exp, index }: ExperienceCardProps) {
                     animate={isInView ? { opacity: 1, x: 0 } : {}}
                     transition={{ delay: 0.35 + i * 0.05, duration: 0.35 }}
                   >
-                    <span className={`flex-shrink-0 w-1.5 h-1.5 rounded-full bg-gradient-to-br ${exp.accentFrom} ${exp.accentTo}`} />
+                    <span
+                      className={`flex-shrink-0 w-1.5 h-1.5 rounded-full bg-gradient-to-br ${exp.accentFrom} ${exp.accentTo}`}
+                    />
                     {item}
                   </motion.li>
                 ))}
@@ -299,7 +309,9 @@ function ExperienceCard({ exp, index }: ExperienceCardProps) {
 
             {/* Tech Badges */}
             <div>
-              <h4 className={`text-xs font-semibold uppercase tracking-widest bg-gradient-to-r ${exp.accentFrom} ${exp.accentTo} bg-clip-text text-transparent mb-3`}>
+              <h4
+                className={`text-xs font-semibold uppercase tracking-widest bg-gradient-to-r ${exp.accentFrom} ${exp.accentTo} bg-clip-text text-transparent mb-3`}
+              >
                 Technologies
               </h4>
               <div className="flex flex-wrap gap-2">
@@ -312,7 +324,9 @@ function ExperienceCard({ exp, index }: ExperienceCardProps) {
                     transition={{ delay: 0.5 + i * 0.05, duration: 0.3 }}
                   >
                     {skillIcons[badge.label] && (
-                      <span className="text-[11px] opacity-80">{skillIcons[badge.label]}</span>
+                      <span className="text-[11px] opacity-80">
+                        {skillIcons[badge.label]}
+                      </span>
                     )}
                     {badge.label}
                   </motion.span>
@@ -347,11 +361,15 @@ export default function Experience() {
   });
 
   const photoY = useTransform(scrollYProgress, [0, 1], ['0%', '100%']);
-  
+
   // Burst effect at the bottom (0.95 to 1.0)
   const photoOpacity = useTransform(scrollYProgress, [0, 0.95, 1], [1, 1, 0]);
   const photoScale = useTransform(scrollYProgress, [0, 0.95, 1], [1, 1, 2.5]);
-  const photoFilter = useTransform(scrollYProgress, [0, 0.95, 1], ['blur(0px)', 'blur(0px)', 'blur(8px)']);
+  const photoFilter = useTransform(
+    scrollYProgress,
+    [0, 0.95, 1],
+    ['blur(0px)', 'blur(0px)', 'blur(8px)']
+  );
 
   return (
     <section
@@ -404,7 +422,8 @@ export default function Experience() {
           </div>
 
           <p className="mt-6 text-slate-400 text-base sm:text-lg max-w-xl mx-auto leading-relaxed">
-            Building real-world impact through modern full-stack development and data analytics.
+            Building real-world impact through modern full-stack development and
+            data analytics.
           </p>
         </motion.div>
 
@@ -423,14 +442,18 @@ export default function Experience() {
           <div className="absolute left-[7px] md:left-1/2 transform md:-translate-x-1/2 top-3 bottom-12 w-9 pointer-events-none z-20">
             <motion.div
               className="absolute w-9 h-9 rounded-full overflow-hidden border-[1.5px] border-cyan-400 shadow-[0_0_15px_rgba(34,211,238,0.5)] -mt-[18px]"
-              style={{ 
-                top: photoY, 
+              style={{
+                top: photoY,
                 opacity: photoOpacity,
                 scale: photoScale,
-                filter: photoFilter
+                filter: photoFilter,
               }}
             >
-              <img src={profilePhoto} alt="Traveling avatar" className="w-full h-full object-cover" />
+              <img
+                src={profilePhoto}
+                alt="Traveling avatar"
+                className="w-full h-full object-cover"
+              />
             </motion.div>
           </div>
 
